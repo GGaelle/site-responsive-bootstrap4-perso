@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Bootstrap 4.0</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/tete-de-tigre.jpg" alt="logo"></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#PRODUCTS">Products</a></li>
+              <li class="nav-item"><a class="nav-link" href="#APPS">Apps</a></li>
+              <li class="nav-item"><a class="nav-link" href="#TEAM">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#CONNECT">Connect</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+
+    <!-- Image Slider Caroussel -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Wallpaper-Apple.png" alt="moutain">
+          <div class="carousel-caption">
+            <h1 class="display-2">Bootstrap</h1>
+            <h3>Complete Website Layout</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
+            <button type="button" class="btn btn-primary btn-lg">Get started</button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/creativecloud_wallpaper.png" alt="bootstrap-logo">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/wallpape_apple-iphone.png" alt="grid">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Jumbotronc -->
+    <div class="container-fluid">
+      <div class="row jumbotronc">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2" id="PRODUCTS">
+          <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Welcome section -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 display-4>Work with Apple Products</h1>
+          <hr>
+          <p class="lead">Welcome to the Apple products website! An infinity of possibilities is offered to you. Indulge...</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Three column Section -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-desktop"></i>
+          <h3>iMac</h3>
+          <p>Work with the latest version of iMac.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-tablet-alt"></i>
+          <h3>iPad</h3>
+          <p>Work with the latest version of iPad.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>iPhone</h3>
+          <p>Work with the latest version of iPhone.</p>
+        </div>
+      </div>
+      <hr class="my-4">
+    </div>
+
+
+    <!-- Two column Section -->
+    <div class="container-fluid padding" id="APPS">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2>Integrated Apps</h2>
+          <p>Each Mac is home to powerful tools for productivity and creation: apps.
+            <br>Through them, explore new ways to be creative, stay connected to your network, and work more effectively than ever before.
+            <br>And to discover thousands of others, visit the Mac App Store.</p>
+          <br>
+          <br>
+          <h2>Professional Apps</h2>
+          <p>For creatives who want to constantly push their limits, our professional apps offer unparalleled control over editing, editing, and production of audio and video projects.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="img/apple-products.png" class="img-fluid" alt="graph">
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+
+    <!-- Fixed background Section -->
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed">
+
+        </div>
+      </div>
+    </figure>
+
+
+
+    <!-- Emoji Section -->
+    <button type="button" class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
+    <div id="emoji" class="collapse">
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-sm-6 col-md-3">
+            <img src="img/gif/panda.gif" class="gif" alt="panda">
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <img src="img/gif/poo.gif" class="gif" alt="poo">
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <img src="img/gif/unicorn.gif" class="gif" alt="unicorn">
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <img src="img/gif/chicken.gif" class="gif" alt="chicken">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Team Section -->
+    <div class="container-fluid padding" id="TEAM">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">Meet the team</h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Cards Team Section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/team1.png" alt="team1">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">John is an internet entrepreneur with almost 20 years of experience.</p>
+              <a href="#" class="btn btn-outline-secondary">See profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/team2.png" alt="team2">
+            <div class="card-body">
+              <h4 class="card-title">Mary jo</h4>
+              <p class="card-text">Mary is a designer with almost 10 years of digital design experience.</p>
+              <a href="#" class="btn btn-outline-secondary">See profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/team3.png" alt="team3">
+            <div class="card-body">
+              <h4 class="card-title">Phil Ho</h4>
+              <p class="card-text">Phil is a developer with over 5 years od web development experience.</p>
+              <a href="#" class="btn btn-outline-secondary">See profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Cards Team Section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-lg-6">
+          <h2>Apple for graphic designers</h2>
+          <p>You are a graphic designer? You hesitate between several computers?
+            <br>Look no further Apple is the reference brand !!!
+            We combine visual quality with the performance of the device. Adobe software loads in 30 seconds without problems.
+            <br><br>You can also code with the speed and fluidity of the system.
+            A product that has a price but a good investment for your profession.</p>
+          <br>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="img/desk-apple.png" class="img-fluid" alt="graph">
+        </div>
+      </div>
+      <hr class="my-4">
+    </div>
+
+
+    <!-- Connect Section -->
+    <div class="container-fluid padding" id="CONNECT">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h2>Connect</h2>
+        </div>
+
+        <div class="col-12 social padding">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="front side">
+          <div class="content">
+            <h1>Contactez-moi</h1>
+          </div>
+        </div>
+
+        <div class="back side">
+          <div class="content">
+            <form>
+              <label>Votre nom :</label>
+              <input type="text" placeholder="Entrez votre nom">
+
+              <label>Votre email :</label>
+              <input type="text" placeholder="Exemple : example@gmail.com">
+
+              <label>Votre message :</label>
+              <textarea placeholder="Contenu de votre message"></textarea>
+
+              <input type="submit" value="Envoyer">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <hr class="light-100">
+        <h5>
+          <a href="#" id="scroll-to-top"><i class="fas fa-sort-up"></i></a>
+          <a href="https://github.com/GGaelle" target="_blank"><i class="fab fa-github"></i></a href="#images">
+          &copy; Gibier Gaëlle - Formation Arinfo - Juillet 2018
+          <a href="https://www.linkedin.com/in/gaelle-gibier/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" id="scroll-to-top"><i class="fas fa-sort-up"></i></a></h5>
+
+      </div>
+
+    </footer>
+
+
+
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>
