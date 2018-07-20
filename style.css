@@ -118,33 +118,104 @@ html, body {
 }
 
 
-/* Connect Section */
-.social a {
-  font-size: 4.5em;
-  padding: 3rem;
+/* Team Section */
+.our-team {
+  padding: 30px 0 40px;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #d5d5d5;
+  box-shadow: 2px 2px 2px #717171;
+  margin-bottom: 70px;
 }
-.fa-facebook {
-  color: #3b5998;
+.our-team .pic {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
 }
-.fa-twitter {
-  color: #00aced;
+.our-team .pic:before {
+  content: "";
+  width: 100%;
+  background: #eb1768;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  transform: scale(3);
+  transition: all .3s linear 0s;
 }
-.fa-google-plus-g {
-  color: #dd4b39;
+.our-team:hover .pic:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #eb1768;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
-.fa-instagram {
-  color: #517fa4;
+.our-team .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 25px;
+  transform: scale(1.2);
+  transition: all .9s ease 0s;
 }
-.fa-youtube {
-  color: #bb0000;
+.our-team:hover .pic img {
+  box-shadow: 0 0 0 3px #f7f5ec;
+  transform: scale(.9);
 }
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-google-plus-g:hover,
-.fa-instagram:hover,
-.fa-youtube:hover {
-  color: #d5d5d5;
+.our-team .team-content {
+  margin-bottom: 30px;
 }
+.our-team .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4e5052;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.our-team .post {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #eb1768;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all .5s ease 0s;
+}
+.our-team:hover .social {
+  bottom: 0;
+}
+.our-team .social li {
+  display: inline-block;
+}
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  transition: all .5s ease 0s;
+}
+.our-team .social li a:hover {
+  color: #eb1768;
+  background: #f7f5ec;
+  text-decoration: none;
+}
+
 
 
 
